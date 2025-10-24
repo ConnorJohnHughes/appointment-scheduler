@@ -6,29 +6,29 @@ document.getElementById('contact-form').onsubmit= () => {
         let isValid = true;
 
 
-        let Fname = document.getElementById('fName').value.trim();
-        let Lname = document.getElementById('lName').value.trim();
-        let Email = document.getElementById('Email').value.trim();
+        let fName = document.getElementById('fName').value.trim();
+        let lName = document.getElementById('lName').value.trim();
       
 
         if (!fName){
-            // alert("No name ")
               document.getElementById('err-fName').style.display = "block";
-              isValid = false;
+                isValid = false;
         };
 
         if (!lName){
-            // alert("No name ")
               document.getElementById('err-lName').style.display = "block";
-              isValid = false;
+                isValid = false;
+
         };
+
+        return isValid;
 
 
     }
 
     function clearErrors()  {
-    let errors = document.getElementsByClassName("error");
-    for (let i = 0; i < errors.length; i++){
-        errors[i].style.display = "none"
-    }
+        let errors = document.getElementsByClassName("error");
+            for (let i = 0; i < errors.length; i++){
+                errors[i].style.display = "none";
+            }
 }

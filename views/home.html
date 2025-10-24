@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/appointment.js" defer></script>
   </head>
   <body>
     <main>
-      <form id="contact-form">
+      <form id="contact-form" action="#" method="get">
         <label for="fName">First Name:</label>
         <input type="text" id="fName" name="fName" />
-        <span id="err-fName" class="error" name="error"></span>
+        <span id="err-fName" class="error" name="error">Missing First Name</span>
 
         <label for="lName">Last Name:</label>
         <input type="text" id="lName" name="lName" />
-        <span id="err-lName" class="error" name="error"></span>
+        <span id="err-lName" class="error" name="error">Missing Last Name </span>
 
         <label for="event-date">Select a Date:</label>
         <input type="date" id="event-date" name="event-date" />
